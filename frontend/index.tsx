@@ -10,7 +10,7 @@ import { XpTitleButtons, XpTitleButtonsClose, XpTitleButtonsNormal } from "~/com
 import MatchAs from "@arksouthern/jsx/mx"
 import { store } from "~/Store"
 import { api, FioStat, SaveLocation } from "../backend"
-import { clipboardFsCopy, clipboardFsPaste, closeAppWindow, kbdShortcutOn, openApp, openFile, queryFileOpener } from "~/lib/luna"
+import { clipboardFsCopy, clipboardFsPaste, closeAppWindow, kbdShortcutOn, openApp, queryFileOpener } from "~/lib/luna"
 import { XpDropDownItem, XpDropDownMenu, XpDropDownTrigger } from "~/components/luna/dropdown-menu.tsx"
 import { XpBarMenu, XpBarMenuCheckboxItem, XpBarMenuDivider, XpBarMenuItem, XpBarMenuLineItem, XpBarMenuMasterItem } from "~/components/luna/bar-menu"
 import { createAbout } from "~/components/luna/about"
