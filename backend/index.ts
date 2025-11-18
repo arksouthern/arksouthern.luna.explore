@@ -1,17 +1,6 @@
-import { Stats } from "fs"
 import { readdir, readFile, stat, writeFile, cp, rm, rename } from "fs/promises"
 import { dirname } from "path"
-import { Shortcut } from "~/Types"
-
-export type FioStat = (Stats & { name: string, type: { as: "shortcut", shortcut: Shortcut } | { as: "file" } | { as: "folder", fios: FioStat[] } | { as: "locked" } })
-export type SaveLocation =
-    | "Desktop"
-    | "Documents"
-    | "Favorites"
-    | "Music"
-    | "Games"
-    | "Pictures"
-    | "Downloads"
+import { FioStat } from "~/Types"
 
 export const api = {
     dirList: async (props: { path: string }) => {
@@ -68,3 +57,14 @@ export const api = {
         await writeFile(`${__dirname}/../../../../../../data/Desktop/Background.di.json`, JSON.stringify(diJson))
     }
 }
+
+
+export { FioStat }
+export type SaveLocation =
+    | "Desktop"
+    | "Documents"
+    | "Favorites"
+    | "Music"
+    | "Games"
+    | "Pictures"
+    | "Downloads"
