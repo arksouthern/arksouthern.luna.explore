@@ -1,6 +1,6 @@
 import { readdir, readFile, stat, writeFile, cp, rm, rename } from "fs/promises"
 import { dirname } from "path"
-import { FioStat } from "~/Types"
+import type { FioStat } from "~/Types"
 
 export const api = {
     dirList: async (props: { path: string }) => {
